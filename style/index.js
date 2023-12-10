@@ -38,6 +38,9 @@ function updateCity(event) {
   <a href="index.html">All cities</a>
   </div>
   `;
+  setTimeout(() => {
+    updateCity(event)
+  }, 1000);
 }
 updateTime();
 setInterval(updateTime, 1000);
